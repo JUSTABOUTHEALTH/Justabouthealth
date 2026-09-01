@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0f766e">
+<title>Support Just About Health ❤️</title>
+<meta name="description" content="Support Just About Health and help us create more useful health content.">
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:linear-gradient(135deg,#ecfdf5,#f0fdfa 45%,#ffffff);color:#12312f}
+.container{max-width:760px;margin:auto;padding:24px 16px 50px}
+.card{background:#fff;border-radius:24px;padding:28px;box-shadow:0 12px 40px rgba(15,118,110,.12);margin-top:18px}
+.hero{text-align:center;padding:34px 20px}
+.logo{width:82px;height:82px;border-radius:50%;background:#0f766e;color:white;display:flex;align-items:center;justify-content:center;font-size:40px;margin:0 auto 16px}
+h1{font-size:34px;margin:8px 0;color:#0f766e}
+h2{font-size:22px;margin-top:0}
+p{line-height:1.65;color:#49615f}
+.btn{display:block;width:100%;border:0;border-radius:14px;padding:15px 18px;margin-top:12px;font-size:16px;font-weight:700;text-decoration:none;text-align:center;cursor:pointer}
+.paypal{background:#0070ba;color:white}
+.upi{background:#0f766e;color:white}
+.instagram{background:#111827;color:white}
+.copy{background:#f0fdfa;color:#0f766e;border:2px solid #99f6e4}
+.info{background:#f8fafc;border-radius:16px;padding:16px;margin-top:12px;word-break:break-all}
+.label{font-size:13px;font-weight:700;color:#64748b;text-transform:uppercase;letter-spacing:.5px}
+.value{font-size:17px;font-weight:700;margin-top:6px}
+.note{font-size:13px;text-align:center;margin-top:22px;color:#64748b}
+.heart{font-size:28px}
+footer{text-align:center;margin-top:22px;color:#64748b;font-size:13px}
+</style>
+</head>
+<body>
+<div class="container">
+  <section class="card hero">
+    <div class="logo">❤️</div>
+    <h1>Just About Health</h1>
+    <p class="heart">Help us grow 🌱</p>
+    <p>
+      If you find our health content useful and want to support the growth of
+      <strong>Just About Health</strong>, you can make a small voluntary contribution.
+      Your support helps us create more helpful content for our community.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>💙 Support via PayPal</h2>
+    <p>You can support us using the PayPal account below.</p>
+    <div class="info">
+      <div class="label">PayPal Email</div>
+      <div class="value" id="paypalEmail">arnabbag327@gmail.com</div>
+    </div>
+    <button class="btn copy" onclick="copyText('paypalEmail','PayPal email copied!')">📋 Copy PayPal Email</button>
+    <a class="btn paypal" href="https://www.paypal.com/donate/?business=arnabbag327%40gmail.com&currency_code=USD" target="_blank" rel="noopener">
+      💙 Open PayPal
+    </a>
+  </section>
+
+  <section class="card">
+    <h2>🇮🇳 Support via UPI</h2>
+    <p>India-তে UPI দিয়ে সহজেই support করতে পারেন।</p>
+    <div class="info">
+      <div class="label">UPI ID</div>
+      <div class="value" id="upiId">arnabbag327-1@oksbi</div>
+    </div>
+    <button class="btn copy" onclick="copyText('upiId','UPI ID copied!')">📋 Copy UPI ID</button>
+    <a class="btn upi" href="upi://pay?pa=arnabbag327-1%40oksbi&pn=Just%20About%20Health&cu=INR">
+      📲 Pay with UPI App
+    </a>
+  </section>
+
+  <section class="card">
+    <h2>📸 Follow Just About Health</h2>
+    <p>Follow the Instagram channel and share our content with someone who may find it useful.</p>
+    <a class="btn instagram" href="https://www.instagram.com/_just_about_health_?igsi=bXllMDBvdnE2Zzlh" target="_blank" rel="noopener">
+      📸 Follow on Instagram
+    </a>
+  </section>
+
+  <p class="note">
+    Support is completely voluntary. Please contribute only what you are comfortable with.
+    This page is for supporting content creation and does not constitute medical advice.
+  </p>
+  <footer>Made with ❤️ for the Just About Health community</footer>
+</div>
+
+<script>
+function copyText(id,msg){
+  const text=document.getElementById(id).innerText;
+  navigator.clipboard.writeText(text).then(()=>{
+    alert(msg);
+  }).catch(()=>{
+    alert(text);
+  });
+}
+</script>
+</body>
+</html>
